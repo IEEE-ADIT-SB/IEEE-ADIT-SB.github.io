@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*
+::-webkit-scrollbar{
+    display: none;
+}
+*/
+
+.navPage{
+    height: auto;
+    width: 100%;
+    background: #3742da;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navPage .navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    margin: 5px 20px;
+    width: 5vw;
+}
+
+.navPage .navMenu ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    list-style: none;
+}
+
+.navMenu ul li a{
+    text-decoration: none;
+    color: #F5F5F5;
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+}
+
+.navMenu ul li a:hover{
+    font-size: 22px;
+}
+
+@media screen and (max-width: 900px){
+    .navPage .navMenu ul{
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .navMenu ul li a:hover{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navPage .navMenu ul{
+        font-size: 12px;
+        width: 70%;
+    }    
+
+    .navMenu ul li a:hover{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .navPage .navMenu ul{
+        font-size: 8px;
+        width: 80%;
+    }
+
+    .navMenu ul li a:hover{
+        font-size: 13px;
+    }
+}
