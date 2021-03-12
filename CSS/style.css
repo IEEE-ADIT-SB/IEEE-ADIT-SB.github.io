@@ -165,6 +165,11 @@ svg {
     color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     transition: 0.5s;
+    padding-top: 5px;
+}
+
+.aboutPage .container .card:last-child .box .content h3{
+    margin-top: -45px;
 }
 
 .aboutPage .container .card .box .content p{
@@ -281,6 +286,10 @@ svg {
     .aboutPage .container .card .box .content h3{
         font-size: 1.35rem;
         padding-top: 13px;
+    }
+
+    .aboutPage .container .card:last-child .box .content h3{
+        margin-top: 0;
     }
 
     .aboutPage .container .card .box .content p{
