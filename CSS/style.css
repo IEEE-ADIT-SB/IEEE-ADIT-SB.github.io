@@ -95,7 +95,6 @@ svg {
 }
 
 /*-------------------------------------------About Page-------------------------------------------*/
-
 .aboutPage{
     display: flex;
     justify-content: center;
@@ -195,9 +194,80 @@ svg {
     background: #2c75ff;
 }
 
+/*-------------------------------------------Features Page-------------------------------------------*/
+.featuresPage{
+    font-family: "montserrat",sans-serif;
+    background-color: #3742da;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 60px 0;
+}
+
+.featuresPage .container{
+    width: 90vw;
+    margin: auto;
+}
+
+.featuresPage .container .sectionTitle{
+    text-align: center;
+    color: #F5F5F5;
+    font-size: 30px;
+}
+
+.featuresPage .container .border{
+    width: 160px;
+    height: 2px;
+    background: #F5F5F5;
+    margin: 40px auto;
+}
+
+.featuresPage .container .containerMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featuresPage .containerMain .serviceBox{
+    max-width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.serviceBox .serviceIcon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #F5F5F5;
+    color: #F5F5F5;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: all .3s linear;
+}
+
+.serviceBox .serviceIcon i{
+    line-height: 60px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+}
+
+.serviceBox:hover .serviceIcon{
+    background-color: #F5F5F5;
+    color: #3742da;
+}
+
+.serviceBox .serviceTitle{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.serviceBox .serviceDescription{
+    font-size: 16px;
+}
+
 @media screen and (max-width: 900px){
     /*-------------------------------------------Nav Menu-------------------------------------------*/
-
     .navPage .navMenu ul{
         font-size: 14px;
         width: 60%;
@@ -215,11 +285,15 @@ svg {
     #ADIT_Text{
         font-size: 36px;
     }
+
+    /*-------------------------------------------Features Page-------------------------------------------*/
+    .featuresPage .containerMain .serviceBox{
+        max-width: 45%;
+    }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     /*-------------------------------------------Nav Menu-------------------------------------------*/
-    
     .navPage .navMenu ul{
         font-size: 12px;
         width: 70%;
@@ -230,7 +304,6 @@ svg {
     }
 
     /*-------------------------------------------Landing Page-------------------------------------------*/
-
     #IEEE_Text{
         font-size: 39px;
     }
@@ -238,11 +311,28 @@ svg {
     #ADIT_Text{
         font-size: 26px;
     }
+
+    /*-------------------------------------------Features Page-------------------------------------------*/
+    .featuresPage{
+        overflow-x: hidden;
+    }
+
+    .featuresPage .container{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .featuresPage .containerMain .serviceBox{
+        max-width: 50%;
+    }
+
+    .serviceBox .serviceDescription{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 450px){
     /*-------------------------------------------Nav Menu-------------------------------------------*/
-    
     .navPage .navMenu ul{
         font-size: 8px;
         width: 80%;
@@ -253,13 +343,11 @@ svg {
     }
     
     /*-------------------------------------------Landing Page-------------------------------------------*/
-    
     .landingText p{
         padding: 20px 0 20px 0;
     }
 
     /*-------------------------------------------About Page-------------------------------------------*/
-
     .aboutPage .container{
         margin: 0;
     }
@@ -296,4 +384,12 @@ svg {
         font-size: 14px;
     }
 
+    /*-------------------------------------------Features Page-------------------------------------------*/
+    .featuresPage .containerMain .serviceBox{
+        max-width: 100%;
+    }    
+
+    .serviceBox .serviceDescription{
+        font-size: 14px;
+    }
 }
