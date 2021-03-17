@@ -1,535 +1,619 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', 'Segoe UI', Arial, sans-serif;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
-
 
 /*-------------------------------------------Nav Menu-------------------------------------------*/
 
-.navPage{
-    height: auto;
-    width: 100%;
-    background: #3742da;
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+.navPage {
+  height: auto;
+  width: 100%;
+  background: #3742da;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
-.navPage .navMenu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navPage .navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo img{
-    margin: 5px 20px;
-    width: 5vw;
+.logo img {
+  margin: 5px 20px;
+  width: 5vw;
 }
 
-.navPage .navMenu ul{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 16px;
-    list-style: none;
+.navPage .navMenu ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  list-style: none;
 }
 
-.navMenu ul li a{
-    text-decoration: none;
-    color: #F5F5F5;
-    transform: scale(1.2);
-    transition: all .5s ease-in-out;
+.navMenu ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
 
-.navMenu ul li a:hover{
-    font-size: 22px;
+.navMenu ul li a:hover {
+  font-size: 22px;
 }
 
 /*-------------------------------------------Landing Page-------------------------------------------*/
 
 svg {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.landingPage{
-    height: 100vh;
-    width: 100vw;
-    background: #3742da;
-    position: relative;
+.landingPage {
+  height: 100vh;
+  width: 100vw;
+  background: #3742da;
+  position: relative;
 }
 
-.landingText{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-75%);
+.landingText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
 }
 
-.landingText p{
-    width: 100vw;
-    text-align: center;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.landingText p {
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#IEEE_Text{
-    font-size: 75px;
-    font-weight: bold;
+#IEEE_Text {
+  font-size: 75px;
+  font-weight: bold;
 }
 
-#ADIT_Text{
-    font-size: 50px;
+#ADIT_Text {
+  font-size: 50px;
 }
 
 /*-------------------------------------------About Page-------------------------------------------*/
-.aboutPage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    background: #111;
+.aboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #111;
 }
 
-.aboutPage .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90vw;
-    margin: 40px 0;
+.aboutPage .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 40px 0;
 }
 
-.aboutPage .container .card{
-    position: relative;
-    width: 320px;
-    height: 440px;
-    box-shadow: inset 5px 5px 5px #2c76ff33,
-                inset -5px -5px 15px #2c76ff1a,
-                5px 5px 15px #2c76ff4d,
-                -5px -5px 15px #3742da1a;
-    border-radius: 15px;
-    margin: 30px;
+.aboutPage .container .card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px #2c76ff33, inset -5px -5px 15px #2c76ff1a,
+    5px 5px 15px #2c76ff4d, -5px -5px 15px #3742da1a;
+  border-radius: 15px;
+  margin: 30px;
 }
 
-.aboutPage .container .card .box{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    background: #2a2b2f;
-    border:  2px solid #1e1f23;
-    border-radius: 15px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
-    transition: all .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.aboutPage .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border: 2px solid #1e1f23;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.aboutPage .container .card .box:hover{
-    transform: scale(1.05)
+.aboutPage .container .card .box:hover {
+  transform: scale(1.05);
 }
 
-
-.aboutPage .container .card .box .content{
-    padding: 20px;
-    text-align: center;
+.aboutPage .container .card .box .content {
+  padding: 20px;
+  text-align: center;
 }
 
-.aboutPage .container .card .box .content h2{
-    position: absolute;
-    top: 0px;
-    right: 5px;
-    font-size: 6rem;
-    color: rgba(255,255,255,0.05);
+.aboutPage .container .card .box .content h2 {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.05);
 }
 
-.aboutPage .container .card .box .content h3{
-    font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.5);
-    z-index: 1;
-    transition: 0.5s;
-    padding-top: 5px;
+.aboutPage .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+  padding-top: 5px;
 }
 
-.aboutPage .container .card:last-child .box .content h3{
-    margin-top: -45px;
+.aboutPage .container .card:last-child .box .content h3 {
+  margin-top: -45px;
 }
 
-.aboutPage .container .card .box .content p{
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.5);
-    z-index: 1;
-    transition: 0.5s;
-    text-align: justify;
+.aboutPage .container .card .box .content p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+  text-align: justify;
 }
 
-.aboutPage .container .card .box .content a{
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    background: #000;
-    margin-top: 15px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 400;
-    color: #fff;
-    background: #2c75ff;
+.aboutPage .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #000;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background: #2c75ff;
 }
 
 /*-------------------------------------------Features Page-------------------------------------------*/
-.featuresPage{
-    font-family: "montserrat",sans-serif;
-    background-color: #3742da;
-    min-height: 100vh;
-    min-width: 100vw;
-    padding: 60px 0;
+.featuresPage {
+  font-family: "montserrat", sans-serif;
+  background-color: #3742da;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 60px 0;
 }
 
-.featuresPage .container{
-    width: 90vw;
-    margin: auto;
+.featuresPage .container {
+  width: 90vw;
+  margin: auto;
 }
 
-.featuresPage .container .sectionTitle{
-    text-align: center;
-    color: #F5F5F5;
-    font-size: 30px;
+.featuresPage .container .sectionTitle {
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 30px;
 }
 
-.featuresPage .container .border{
-    width: 160px;
-    height: 2px;
-    background: #F5F5F5;
-    margin: 40px auto;
+.featuresPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #f5f5f5;
+  margin: 40px auto;
 }
 
-.featuresPage .container .containerMain{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.featuresPage .container .containerMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.featuresPage .containerMain .serviceBox{
-    max-width: 33.33%;
-    padding: 10px;
-    text-align: center;
-    color: #F5F5F5;
+.featuresPage .containerMain .serviceBox {
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #f5f5f5;
 }
 
-.serviceBox .serviceIcon{
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    border: 3px solid #F5F5F5;
-    color: #F5F5F5;
-    transform: rotate(45deg);
-    margin-bottom: 30px;
-    margin-top: 16px;
-    transition: all .3s linear;
+.serviceBox .serviceIcon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #f5f5f5;
+  color: #f5f5f5;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: all 0.3s linear;
 }
 
-.serviceBox .serviceIcon i{
-    line-height: 60px;
-    transform: rotate(-45deg);
-    font-size: 26px;
+.serviceBox .serviceIcon i {
+  line-height: 60px;
+  transform: rotate(-45deg);
+  font-size: 26px;
 }
 
-.serviceBox:hover .serviceIcon{
-    background-color: #F5F5F5;
-    color: #3742da;
+.serviceBox:hover .serviceIcon {
+  background-color: #f5f5f5;
+  color: #3742da;
 }
 
-.serviceBox .serviceTitle{
-    font-size: 18px;
-    margin-bottom: 10px;
+.serviceBox .serviceTitle {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.serviceBox .serviceDescription{
-    font-size: 16px;
+.serviceBox .serviceDescription {
+  font-size: 16px;
 }
 
 /*-------------------------------------------Membership Page-------------------------------------------*/
-.membershipPage{
-    background-color: #111;
-    padding: 60px 0;
+.membershipPage {
+  background-color: #111;
+  padding: 60px 0;
 }
 
-.membershipPage .container{
-    width: 90vw;
-    margin: auto;
+.membershipPage .container {
+  width: 90vw;
+  margin: auto;
 }
 
-.membershipPage .container .sectionTitle{
-    font-family: 'montserrat', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    color: #2c75ff;
+.membershipPage .container .sectionTitle {
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #2c75ff;
 }
 
-.membershipPage .container .border{
-    width: 160px;
-    height: 2px;
-    background: #2c75ff;
-    margin: 40px auto;
+.membershipPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
 }
 
-.membershipPage .containerMain{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-} 
-
-.membershipPage .containerMain .card{
-    position: relative;
-    width: 30%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    background: #333;
-    padding: 30px 20px;
-    text-align: center;
-    overflow: hidden;
-    -webkit-box-reflect: below 1px linear-gradient(transparent 92%, #0009);
+.membershipPage .containerMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.membershipPage .containerMain .card .layer{
-    position: absolute;
-    top: calc(100% - 2px);
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#03a9f4,#F66B4E);
-    z-index: 1;
-    transition: 0.5s;
+.membershipPage .containerMain .card {
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background: #333;
+  padding: 30px 20px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent 92%, #0009);
 }
 
-.membershipPage .containerMain .card:hover .layer{
-    top: 0;
+.membershipPage .containerMain .card .layer {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#03a9f4, #f66b4e);
+  z-index: 1;
+  transition: 0.5s;
 }
 
-.membershipPage .containerMain .card .content{
-    position: relative;
-    z-index: 2;
+.membershipPage .containerMain .card:hover .layer {
+  top: 0;
 }
 
-.membershipPage .containerMain .card .content h2{
-    font-size: 25px;
-    color: #fff;
+.membershipPage .containerMain .card .content {
+  position: relative;
+  z-index: 2;
 }
 
-.membershipPage .containerMain .card .content ul{
-    font-size: 18px;
-    line-height: 20px;
-    margin-top: 20px;
-    color: #fff;
-    text-align: center;
-    padding-left: 20px;
+.membershipPage .containerMain .card .content h2 {
+  font-size: 25px;
+  color: #fff;
 }
 
-.membershipPage .containerMain .card .content ul li{
-    margin-bottom: 10px;
+.membershipPage .containerMain .card .content ul {
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  padding-left: 20px;
 }
 
-.membershipPage .containerMain .card .content .knowMore{
-    display: inline-block;
-    padding: 10px 20px;
-    letter-spacing: .5px;
+.membershipPage .containerMain .card .content ul li {
+  margin-bottom: 10px;
+}
+
+.membershipPage .containerMain .card .content .knowMore {
+  display: inline-block;
+  padding: 10px 20px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #fff;
+  background: #3742da;
+  text-decoration: none;
+  border-radius: 13px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.membershipPage .containerMain .card:hover .content .knowMore {
+  background: #2c75ff;
+}
+
+/*-------------------------------------------Achievments Page-------------------------------------------*/
+.achievmentsPage {
+  min-height: 90vh;
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.achievmentsPage .container {
+  width: 90vw;
+  margin: auto;
+}
+
+.achievmentsPage .container .sectionTitle {
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #2c75ff;
+}
+
+.achievmentsPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
+}
+
+.achievmentsPage .containerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.achievmentsPage .containerMain .yearCard {
+  width: 300px;
+  height: 300px;
+  cursor: grab;
+}
+
+.achievmentsPage .containerMain .yearCard .swiper-slide {
+  background-color: #3742da;
+  color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.achievmentsPage .containerMain .yearCard .swiper-slide h1 {
+  color: #fdff2c;
+  font-size: 80px;
+}
+
+.achievmentsPage .containerMain .yearCard .swiper-slide p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.achievmentsPage .containerMain .yearCard .slideNav {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+  /*-------------------------------------------Achievments Page-------------------------------------------*/
+  .achievmentsPage .containerMain .yearCard {
+    margin: 30px 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /*-------------------------------------------Nav Menu-------------------------------------------*/
+  .navPage .navMenu ul {
     font-size: 14px;
-    color: #fff;
-    background: #3742da;
-    text-decoration: none;
-    border-radius: 13px;
+    width: 60%;
+  }
+
+  .navMenu ul li a:hover {
+    font-size: 20px;
+  }
+
+  /*-------------------------------------------Landing Page-------------------------------------------*/
+  #IEEE_Text {
+    font-size: 54px;
+  }
+
+  #ADIT_Text {
+    font-size: 36px;
+  }
+
+  /*-------------------------------------------Features Page-------------------------------------------*/
+  .featuresPage .containerMain .serviceBox {
+    max-width: 45%;
+  }
+
+  /*-------------------------------------------Membership Page-------------------------------------------*/
+  .membershipPage .containerMain .card:nth-child(1) {
+    width: 40%;
+    order: 2;
+  }
+
+  .membershipPage .containerMain .card:nth-child(3) {
+    width: 40%;
+    order: 3;
+  }
+
+  .membershipPage .containerMain .card:nth-child(2) {
+    width: 75%;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /*-------------------------------------------Nav Menu-------------------------------------------*/
+  .navPage .navMenu ul {
+    font-size: 12px;
+    width: 70%;
+  }
+
+  .navMenu ul li a:hover {
+    font-size: 17px;
+  }
+
+  /*-------------------------------------------Landing Page-------------------------------------------*/
+  #IEEE_Text {
+    font-size: 39px;
+  }
+
+  #ADIT_Text {
+    font-size: 26px;
+  }
+
+  /*-------------------------------------------Features Page-------------------------------------------*/
+  .featuresPage {
+    overflow-x: hidden;
+  }
+
+  .featuresPage .container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .featuresPage .containerMain .serviceBox {
+    max-width: 50%;
+  }
+
+  .serviceBox .serviceDescription {
+    font-size: 16px;
+  }
+
+  /*-------------------------------------------Membership Page-------------------------------------------*/
+  .membershipPage .containerMain .card:nth-child(1),
+  .membershipPage .containerMain .card:nth-child(2),
+  .membershipPage .containerMain .card:nth-child(3) {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /*-------------------------------------------Nav Menu-------------------------------------------*/
+  .navPage .navMenu ul {
+    font-size: 8px;
+    width: 80%;
+  }
+
+  .navMenu ul li a:hover {
+    font-size: 13px;
+  }
+
+  /*-------------------------------------------Landing Page-------------------------------------------*/
+  .landingText p {
+    padding: 20px 0 20px 0;
+  }
+
+  /*-------------------------------------------About Page-------------------------------------------*/
+  .aboutPage .container {
+    margin: 0;
+  }
+
+  .aboutPage .container .card {
+    margin: 5px;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+  .aboutPage .container .card:last-child {
+    height: 355px;
+  }
+
+  .aboutPage .container .card .box .content {
+    padding: 10px;
+  }
+
+  .aboutPage .container .card .box .content h2 {
+    right: 5px;
+    font-size: 4.5rem;
+  }
+
+  .aboutPage .container .card .box .content h3 {
+    font-size: 1.35rem;
+    padding-top: 13px;
+  }
+
+  .aboutPage .container .card:last-child .box .content h3 {
+    margin-top: 0;
+  }
+
+  .aboutPage .container .card .box .content p {
+    font-size: 14px;
+  }
+
+  /*-------------------------------------------Features Page-------------------------------------------*/
+  .featuresPage .containerMain .serviceBox {
+    max-width: 100%;
+  }
+
+  .serviceBox .serviceDescription {
+    font-size: 14px;
+  }
+
+  /*-------------------------------------------Membership Page-------------------------------------------*/
+  .membershipPage .containerMain .card .content h2 {
+    font-size: 20px;
+  }
+
+  .membershipPage .containerMain .card .content ul {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+
+  .membershipPage .containerMain .card .content .knowMore {
+    padding: 8px 16px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    border-radius: 10px;
     margin-top: 20px;
-    transition: all 0.5s ease-in-out;
-}
+  }
 
-.membershipPage .containerMain .card:hover .content .knowMore{
-    background: #2c75ff;
-}
+  /*-------------------------------------------Achievments Page-------------------------------------------*/
+  .achievmentsPage .containerMain .yearCard {
+    width: 250px;
+    height: 250px;
+    cursor: grab;
+  }
 
-@media screen and (max-width: 900px){
-    /*-------------------------------------------Nav Menu-------------------------------------------*/
-    .navPage .navMenu ul{
-        font-size: 14px;
-        width: 60%;
-    }
-
-    .navMenu ul li a:hover{
-        font-size: 20px;
-    }
-
-    /*-------------------------------------------Landing Page-------------------------------------------*/
-    #IEEE_Text{
-        font-size: 54px;
-    }
-    
-    #ADIT_Text{
-        font-size: 36px;
-    }
-
-    /*-------------------------------------------Features Page-------------------------------------------*/
-    .featuresPage .containerMain .serviceBox{
-        max-width: 45%;
-    }
-
-    /*-------------------------------------------Membership Page-------------------------------------------*/
-    .membershipPage .containerMain .card:nth-child(1){
-        width: 40%;
-        order: 2;
-    }
-
-    .membershipPage .containerMain .card:nth-child(3){
-        width: 40%;
-        order: 3;
-    }
-
-    .membershipPage .containerMain .card:nth-child(2){
-        width: 75%;
-        order: 1;
-    }
-}
-
-@media screen and (max-width: 700px){
-    /*-------------------------------------------Nav Menu-------------------------------------------*/
-    .navPage .navMenu ul{
-        font-size: 12px;
-        width: 70%;
-    }    
-
-    .navMenu ul li a:hover{
-        font-size: 17px;
-    }
-
-    /*-------------------------------------------Landing Page-------------------------------------------*/
-    #IEEE_Text{
-        font-size: 39px;
-    }
-    
-    #ADIT_Text{
-        font-size: 26px;
-    }
-
-    /*-------------------------------------------Features Page-------------------------------------------*/
-    .featuresPage{
-        overflow-x: hidden;
-    }
-
-    .featuresPage .container{
-        width: 100vw;
-        margin: 0;
-    }
-
-    .featuresPage .containerMain .serviceBox{
-        max-width: 50%;
-    }
-
-    .serviceBox .serviceDescription{
-        font-size: 16px;
-    }
-
-    /*-------------------------------------------Membership Page-------------------------------------------*/
-    .membershipPage .containerMain .card:nth-child(1),.membershipPage .containerMain .card:nth-child(2),.membershipPage .containerMain .card:nth-child(3){
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 450px){
-    /*-------------------------------------------Nav Menu-------------------------------------------*/
-    .navPage .navMenu ul{
-        font-size: 8px;
-        width: 80%;
-    }
-
-    .navMenu ul li a:hover{
-        font-size: 13px;
-    }
-    
-    /*-------------------------------------------Landing Page-------------------------------------------*/
-    .landingText p{
-        padding: 20px 0 20px 0;
-    }
-
-    /*-------------------------------------------About Page-------------------------------------------*/
-    .aboutPage .container{
-        margin: 0;
-    }
-
-    .aboutPage .container .card{
-        margin: 5px;
-        height: 400px;
-        margin-bottom: 30px;
-    }
-
-    .aboutPage .container .card:last-child{
-        height: 355px;
-    }
-
-    .aboutPage .container .card .box .content{
-        padding: 10px;
-    }
-
-    .aboutPage .container .card .box .content h2{
-        right: 5px;
-        font-size: 4.5rem;
-    }
-
-    .aboutPage .container .card .box .content h3{
-        font-size: 1.35rem;
-        padding-top: 13px;
-    }
-
-    .aboutPage .container .card:last-child .box .content h3{
-        margin-top: 0;
-    }
-
-    .aboutPage .container .card .box .content p{
-        font-size: 14px;
-    }
-
-    /*-------------------------------------------Features Page-------------------------------------------*/
-    .featuresPage .containerMain .serviceBox{
-        max-width: 100%;
-    }    
-
-    .serviceBox .serviceDescription{
-        font-size: 14px;
-    }
-
-    /*-------------------------------------------Membership Page-------------------------------------------*/
-    .membershipPage .containerMain .card .content h2{
-        font-size: 20px;
-    }
-
-    .membershipPage .containerMain .card .content ul{
-        font-size: 15px;
-        line-height: 18px;
-        margin-top: 16px;
-    }
-
-    .membershipPage .containerMain .card .content .knowMore{
-        padding: 8px 16px;
-        letter-spacing: .5px;
-        font-size: 12px;
-        border-radius: 10px;
-        margin-top: 20px;
-    }
+  .achievmentsPage .containerMain .yearCard .swiper-slide p {
+    font-size: 17px;
+    line-height: 26px;
+  }
 }
