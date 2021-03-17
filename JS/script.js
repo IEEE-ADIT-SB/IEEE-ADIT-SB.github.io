@@ -24,3 +24,39 @@ var swiper = new Swiper('.yearCard', {
         disableOnInteraction: false,
     },
 });
+
+var iconBox = document.querySelectorAll('.iconBox');
+var contentBox = document.querySelectorAll('.contentBox');
+
+for (var i = 0; i<iconBox.length;i++){
+    iconBox[i].addEventListener('mouseover',function(){
+        for(var i = 0; i < contentBox.length; i++){
+            contentBox[i].className = 'contentBox';
+        }
+        console.log(document.getElementById(this.dataset.id).className)
+        document.getElementById(this.dataset.id).className = 'contentBox active';
+        console.log(document.getElementById(this.dataset.id).className)
+        for(var i = 0; i < iconBox.length; i++){
+            iconBox[i].className = 'iconBox';
+        }
+        this.className = 'iconBox active';
+    })
+}
+
+var changer = document.querySelector('.changer');
+var first = document.querySelector('.main.first');
+var second = document.querySelector('.main.second');
+
+changer.addEventListener('click', function(){
+    changer.classList.toggle('close')
+    first.classList.toggle('close');
+    second.classList.toggle('close');
+})
+
+setInterval(change,5000)
+
+function change(){
+    changer.classList.toggle('close')
+    first.classList.toggle('close');
+    second.classList.toggle('close');
+}

@@ -190,12 +190,175 @@ svg {
   background: #2c75ff;
 }
 
+/*-------------------------------------------Team Page-------------------------------------------*/
+.teamPage {
+  font-family: "montserrat", sans-serif;
+  background-color: #111;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 60px 0;
+}
+
+.teamPage .container {
+  width: 90vw;
+  margin: auto;
+}
+
+.teamPage .container .sectionTitle {
+  text-align: center;
+  color: #2c75ff;
+  font-size: 30px;
+}
+
+.teamPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
+}
+
+.teamPage .container .containerMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teamPage .iconSection {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.teamPage .iconSection .iconBox {
+  width: 30%;
+  margin: 10px;
+  padding: 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  transition: 0.5s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.teamPage .iconSection .iconBox.active {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.teamPage .iconSection .iconBox img {
+  width: 80%;
+  filter: grayscale(1);
+  transition: 0.5s;
+  transform: scale(0.8);
+}
+
+.teamPage .iconSection .iconBox.active img {
+  filter: grayscale(0);
+  transform: scale(1);
+}
+
+.teamPage .memberSection {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.teamPage .memberSection .contentBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.teamPage .memberSection .contentBox .changer {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  border: 3px #3742da solid;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.teamPage .memberSection .contentBox .changer.close {
+  background-color: #3742da;
+}
+
+.teamPage .memberSection .contentBox.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.teamPage .memberSection .contentBox .main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.teamPage .memberSection .contentBox .main.close {
+  transform: scale(0);
+}
+
+.teamPage .memberSection .contentBox .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamPage .memberSection .contentBox .row:nth-child(2) {
+  justify-content: space-around;
+}
+
+.teamPage .memberSection .contentBox .row .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .row .info .pic {
+  background-color: #3742da;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.contentBox .row .info .name {
+  font-size: 25px;
+  padding-top: 5px;
+  color: #2c75ff;
+  text-align: center;
+}
+
+.contentBox .row .info .position {
+  color: #f66b4e;
+  text-align: center;
+}
+
 /*-------------------------------------------Features Page-------------------------------------------*/
 .featuresPage {
   font-family: "montserrat", sans-serif;
   background-color: #3742da;
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
   padding: 60px 0;
 }
 
@@ -430,6 +593,20 @@ svg {
 }
 
 @media screen and (max-width: 1050px) {
+  /*-------------------------------------------Team Page-------------------------------------------*/
+  .teamPage .iconSection,
+  .teamPage .memberSection {
+    width: 50%;
+  }
+
+  .teamPage .iconSection .iconBox {
+    width: 40%;
+  }
+
+  .teamPage .iconSection .iconBox:first-child {
+    width: 80%;
+  }
+
   /*-------------------------------------------Achievments Page-------------------------------------------*/
   .achievmentsPage .containerMain .yearCard {
     margin: 30px 15px;
@@ -454,6 +631,15 @@ svg {
 
   #ADIT_Text {
     font-size: 36px;
+  }
+
+  /*-------------------------------------------Team Page-------------------------------------------*/
+  .contentBox .row .info .name {
+    font-size: 20px;
+  }
+
+  .contentBox .row .info .position {
+    font-size: 13px;
   }
 
   /*-------------------------------------------Features Page-------------------------------------------*/
@@ -496,6 +682,32 @@ svg {
 
   #ADIT_Text {
     font-size: 26px;
+  }
+
+  /*-------------------------------------------Team Page-------------------------------------------*/
+  .teamPage .container {
+    width: 95vw;
+    margin: auto;
+  }
+
+  .teamPage .memberSection .contentBox .changer {
+    height: 10px;
+    width: 10px;
+    border: 2px #3742da solid;
+  }
+
+  .contentBox .row .info .pic {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+  }
+
+  .contentBox .row .info .name {
+    font-size: 16px;
+  }
+
+  .contentBox .row .info .position {
+    font-size: 10px;
   }
 
   /*-------------------------------------------Features Page-------------------------------------------*/
@@ -575,6 +787,24 @@ svg {
 
   .aboutPage .container .card .box .content p {
     font-size: 14px;
+  }
+
+  /*-------------------------------------------Team Page-------------------------------------------*/
+  .teamPage .iconSection .iconBox {
+    width: 35%;
+  }
+
+  .contentBox .row .info .pic {
+    height: 50px;
+    width: 50px;
+  }
+
+  .contentBox .row .info .name {
+    font-size: 14px;
+  }
+
+  .contentBox .row .info .position {
+    font-size: 9px;
   }
 
   /*-------------------------------------------Features Page-------------------------------------------*/
