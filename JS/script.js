@@ -33,9 +33,7 @@ for (var i = 0; i<iconBox.length;i++){
         for(var i = 0; i < contentBox.length; i++){
             contentBox[i].className = 'contentBox';
         }
-        console.log(document.getElementById(this.dataset.id).className)
         document.getElementById(this.dataset.id).className = 'contentBox active';
-        console.log(document.getElementById(this.dataset.id).className)
         for(var i = 0; i < iconBox.length; i++){
             iconBox[i].className = 'iconBox';
         }
