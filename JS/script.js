@@ -25,6 +25,68 @@ var swiper = new Swiper('.yearCard', {
     },
 });
 
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+if(window.innerWidth <= 900 && window.innerWidth > 700){
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+else if(window.innerWidth <= 700){
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
+
+
 var iconBox = document.querySelectorAll('.iconBox');
 var contentBox = document.querySelectorAll('.contentBox');
 
