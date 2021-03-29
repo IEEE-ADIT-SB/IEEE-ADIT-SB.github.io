@@ -1,0 +1,1468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*-------------------------------------------Nav Menu-------------------------------------------*/
+
+.navPage {
+  height: auto;
+  width: 100%;
+  background: #2c75ff;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navPage .navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  margin: 5px 20px;
+  width: 5vw;
+}
+
+.navPage .navMenu ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  list-style: none;
+}
+
+.navMenu ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.navMenu ul li a:hover {
+  font-size: 22px;
+}
+
+/*-------------------------------------------Landing Page-------------------------------------------*/
+
+svg {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.landingPage {
+  height: 100vh;
+  width: 100vw;
+  background: #2c75ff;
+  position: relative;
+}
+
+.landingText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.landingText p {
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#IEEE_Text {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+#ADIT_Text {
+  font-size: 50px;
+}
+
+/*-------------------------------------------About Page-------------------------------------------*/
+.aboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.aboutPage .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 40px 0;
+}
+
+.aboutPage .container .card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.aboutPage .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutPage .container .card .box:hover {
+  transform: scale(1.05);
+}
+
+.aboutPage .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutPage .container .card .box .content h2 {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.aboutPage .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.aboutPage .container .card:last-child .box .content h3 {
+  margin-top: -60px;
+}
+
+.aboutPage .container .card .box .content p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: 0.5s;
+  text-align: justify;
+}
+
+.aboutPage .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #000;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background: #2c75ff;
+}
+
+/*-------------------------------------------Team Page-------------------------------------------*/
+.teamPage {
+  font-family: "montserrat", sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 60px 0;
+}
+
+.teamPage .container {
+  width: 90vw;
+  margin: auto;
+}
+
+.teamPage .container .sectionTitle {
+  text-align: center;
+  color: #2c75ff;
+  font-size: 30px;
+}
+
+.teamPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
+}
+
+.teamPage .container .containerMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teamPage .iconSection {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.teamPage .iconSection .iconBox {
+  width: 30%;
+  margin: 10px;
+  padding: 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  transition: 0.5s;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.07);
+}
+
+.teamPage .iconSection .iconBox.active {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.teamPage .iconSection .iconBox img {
+  width: 80%;
+  filter: grayscale(1);
+  transition: 0.5s;
+  transform: scale(0.8);
+}
+
+.teamPage .iconSection .iconBox.active img {
+  filter: grayscale(0);
+  transform: scale(1);
+}
+
+.teamPage .memberSection {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.teamPage .memberSection .contentBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.teamPage .memberSection .contentBox .changer {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  border: 3px #2c75ff solid;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.teamPage .memberSection .contentBox .changer.close {
+  background-color: #2c75ff;
+}
+
+.teamPage .memberSection .contentBox.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.teamPage .memberSection .contentBox .main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.teamPage .memberSection .contentBox .main.close {
+  transform: scale(0);
+}
+
+.teamPage .memberSection .contentBox .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamPage .memberSection .contentBox .row:nth-child(2) {
+  justify-content: space-around;
+}
+
+.teamPage .memberSection .contentBox .row .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .row .info .pic {
+  background-color: #3742da;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.contentBox .row .info .pic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.contentBox .row .info .name {
+  font-size: 25px;
+  padding-top: 5px;
+  color: #2c75ff;
+  text-align: center;
+}
+
+.contentBox .row .info .position {
+  color: #f66b4e;
+  text-align: center;
+}
+
+/*-------------------------------------------Event Page-------------------------------------------*/
+.eventPage {
+  font-family: "montserrat", sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 60px 0;
+}
+
+.eventPage .container {
+  width: 100vw;
+  margin: auto;
+}
+
+.eventPage .container .sectionTitle {
+  text-align: center;
+  color: #2c75ff;
+  font-size: 30px;
+}
+
+.eventPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
+}
+
+.eventPage .container .containerMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.eventPage .container .containerMain .swiper-container {
+  width: 100%;
+  height: 460px;
+}
+
+.eventPage .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #f5f5f5;
+  padding: 0 40px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: top;
+  -ms-flex-align: top;
+  -webkit-align-items: top;
+  align-items: top;
+}
+
+.eventPage .swiper-container .swiper-slide .event {
+  background-color: #bdbdbd;
+  width: calc(0.3 * 90vw);
+  height: 395px;
+  position: relative;
+  border-radius: 5%;
+  box-shadow: 5px 5px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.eventPage .event .pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75%;
+  transition: all 0.5s ease-in-out;
+}
+
+.eventPage .event .pic img {
+  height: 100%;
+  width: 100%;
+}
+
+.eventPage .event .eventDetails {
+  position: absolute;
+  top: 75%;
+  background-color: #bdbdbd;
+  padding: 3px;
+  width: 100%;
+  transition: all 0.75s ease-in-out;
+}
+
+.eventDetails .society {
+  position: absolute;
+  top: -22px;
+  left: 0;
+  background-color: #2c75ff;
+  padding: 3px;
+  color: #fff;
+  transition: all 0.75s ease-in-out;
+  font-size: 16px;
+}
+
+.eventDetails .dateTime {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.eventDetails .fullDetails h1 {
+  color: #007da6;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 11px 0;
+}
+
+.eventDetails .fullDetails p {
+  padding: 5px;
+  font-size: 16px;
+  text-align: justify;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.eventPage .event:hover .pic {
+  transform: scale(1.2);
+}
+
+.eventPage .event:hover .eventDetails {
+  transform: translateY(-60%);
+}
+
+.eventPage .event:hover .eventDetails p {
+  opacity: 1;
+}
+/*-------------------------------------------Features Page-------------------------------------------*/
+.featuresPage {
+  font-family: "montserrat", sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 60px 0;
+}
+
+.featuresPage .container {
+  width: 90vw;
+  margin: auto;
+}
+
+.featuresPage .container .sectionTitle {
+  text-align: center;
+  color: #2c75ff;
+  font-size: 30px;
+}
+
+.featuresPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
+}
+
+.featuresPage .container .containerMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featuresPage .containerMain .serviceBox {
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #2c75ff;
+  position: relative;
+}
+
+.featuresPage .containerMain .serviceBox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  height: 0%;
+  width: 0%;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s linear;
+}
+
+.featuresPage .containerMain .serviceBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  height: 0%;
+  width: 0%;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  transition: all 0.5s linear;
+}
+
+.featuresPage .containerMain .serviceBox:hover::before,
+.featuresPage .containerMain .serviceBox:hover::after {
+  height: 100%;
+  width: 100%;
+  border-color: #2c75ff;
+}
+
+.serviceBox .serviceIcon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #2c75ff;
+  color: #2c75ff;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: all 0.3s linear;
+}
+
+.serviceBox .serviceIcon i {
+  line-height: 60px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+
+.serviceBox:hover .serviceIcon {
+  background-color: #2c75ff;
+  color: #f5f5f5;
+}
+
+.serviceBox .serviceTitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.serviceBox .serviceDescription {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/*-------------------------------------------Membership Page-------------------------------------------*/
+.membershipPage {
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.membershipPage .container {
+  width: 90vw;
+  margin: auto;
+}
+
+.membershipPage .container .sectionTitle {
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #2c75ff;
+}
+
+.membershipPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
+}
+
+.membershipPage .containerMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.membershipPage .containerMain .card {
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background: #2c75ff;
+  padding: 30px 20px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent 92%, #0009);
+}
+
+.membershipPage .containerMain .card .layer {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.membershipPage .containerMain .card:hover .layer {
+  top: 0;
+}
+
+.membershipPage .containerMain .card .content {
+  position: relative;
+  z-index: 2;
+}
+
+.membershipPage .containerMain .card .content h2 {
+  font-size: 25px;
+  color: #fff;
+}
+
+.membershipPage .containerMain .card .content ul {
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.membershipPage .containerMain .card .content ul li {
+  margin-bottom: 10px;
+}
+
+.membershipPage .containerMain .card .content .knowMore {
+  display: inline-block;
+  padding: 10px 20px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #2c75ff;
+  background: #f5f5f5;
+  text-decoration: none;
+  border-radius: 13px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.membershipPage .containerMain .card:hover .content .knowMore {
+  background: #2c75ff;
+  color: #f5f5f5;
+}
+
+/*-------------------------------------------Achievments Page-------------------------------------------*/
+.achievmentsPage {
+  min-height: 90vh;
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.achievmentsPage .container {
+  width: 90vw;
+  margin: auto;
+}
+
+.achievmentsPage .container .sectionTitle {
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #2c75ff;
+}
+
+.achievmentsPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
+}
+
+.achievmentsPage .containerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.achievmentsPage .containerMain .yearCard {
+  width: 300px;
+  height: 300px;
+  cursor: grab;
+}
+
+.achievmentsPage .containerMain .yearCard .swiper-slide {
+  background-color: #2c75ff;
+  color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.achievmentsPage .containerMain .yearCard .swiper-slide h1 {
+  color: #fdff2c;
+  font-size: 80px;
+}
+
+.achievmentsPage .containerMain .yearCard .swiper-slide p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.achievmentsPage .containerMain .yearCard .slideNav {
+  width: 100%;
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+
+/*-------------------------------------------Contact Page-------------------------------------------*/
+.contactPage {
+  font-family: "montserrat", sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 60px 0;
+}
+
+.contactPage .container {
+  width: 90vw;
+  margin: auto;
+  justify-content: center;
+}
+
+.contactPage .container .sectionTitle {
+  text-align: center;
+  color: #2c75ff;
+  font-size: 30px;
+}
+
+.contactPage .container .border {
+  width: 160px;
+  height: 2px;
+  background: #2c75ff;
+  margin: 40px auto;
+}
+
+.contactPage .container .containerMain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 35vw;
+}
+
+.contactPage .containerMain .restInfo {
+  width: 50%;
+  background-color: #2c75ff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactPage .restInfo .address,
+.contactPage .restInfo .mail,
+.contactPage .restInfo .phone,
+.contactPage .restInfo .socialMedia {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.contactPage .restInfo .icon {
+  border: 3px solid #f5f5f5;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+}
+
+.contactPage .restInfo .icon i {
+  font-size: 50px;
+  color: #f5f5f5;
+  margin: auto;
+}
+
+.contactPage .restInfo .phone .icon i {
+  transform: scaleX(-1);
+}
+
+.contactPage .restInfo .title {
+  color: #f5f5f5;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60%;
+}
+
+.contactPage .restInfo p {
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  padding-top: 60%;
+  color: #f5f5f5;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.contactPage .restInfo .socialMedia .title {
+  color: #f5f5f5;
+  font-size: 20px;
+  text-align: center;
+  top: 15%;
+  width: 100%;
+}
+
+.contactPage .restInfo .socialMedia .groupIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15%;
+  margin-top: 10px;
+}
+
+.contactPage .restInfo .socialMedia .groupIcons div {
+  width: 35%;
+  padding: 20px 0;
+}
+
+.contactPage .restInfo .socialMedia a {
+  text-decoration: none;
+}
+
+.contactPage .restInfo .socialMedia i {
+  color: #f5f5f5;
+  font-size: 30px;
+}
+
+.contactPage .containerMain .mapSection {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactPage .containerMain .mapSection iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  /*-------------------------------------------Contact Page-------------------------------------------*/
+  .contactPage .restInfo .icon {
+    border: 2px solid #f5f5f5;
+    height: 75px;
+    width: 75px;
+  }
+
+  .contactPage .restInfo .icon i {
+    font-size: 37.5px;
+  }
+
+  .contactPage .restInfo .title,
+  .contactPage .restInfo .socialMedia .title {
+    font-size: 17px;
+  }
+
+  .contactPage .restInfo p {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .contactPage .restInfo .socialMedia .groupIcons {
+    margin-top: 20px;
+  }
+
+  .contactPage .restInfo .socialMedia .groupIcons div {
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  /*-------------------------------------------Team Page-------------------------------------------*/
+  .teamPage .iconSection,
+  .teamPage .memberSection {
+    width: 50%;
+  }
+
+  .teamPage .iconSection .iconBox {
+    width: 40%;
+  }
+
+  .teamPage .iconSection .iconBox:first-child {
+    width: 80%;
+  }
+
+  /*-------------------------------------------Achievments Page-------------------------------------------*/
+  .achievmentsPage .containerMain .yearCard {
+    margin: 30px 15px;
+  }
+
+  /*-------------------------------------------Event Page-------------------------------------------*/
+  .eventPage .container .containerMain .swiper-container {
+    height: 362px;
+  }
+
+  .eventPage .swiper-container .swiper-slide .event {
+    height: 295px;
+  }
+
+  .eventDetails .society {
+    top: -21px;
+    font-size: 15px;
+  }
+
+  .eventDetails .dateTime {
+    font-size: 16px;
+  }
+
+  .eventDetails .fullDetails h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .eventDetails .fullDetails p {
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  .eventPage .event:hover .eventDetails {
+    transform: translateY(-70%);
+  }
+
+  /*-------------------------------------------Contact Page-------------------------------------------*/
+  .contactPage .restInfo .icon {
+    height: 60px;
+    width: 60px;
+    top: 10%;
+  }
+
+  .contactPage .restInfo .icon i {
+    font-size: 30px;
+  }
+
+  .contactPage .restInfo .title {
+    top: 55%;
+  }
+
+  .contactPage .restInfo p {
+    font-size: 12px;
+    padding-top: 55%;
+  }
+
+  .contactPage .restInfo .socialMedia i {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /*-------------------------------------------Nav Menu-------------------------------------------*/
+  .navPage .navMenu ul {
+    font-size: 14px;
+    width: 60%;
+  }
+
+  .navMenu ul li a:hover {
+    font-size: 20px;
+  }
+
+  /*-------------------------------------------Landing Page-------------------------------------------*/
+  #IEEE_Text {
+    font-size: 54px;
+  }
+
+  #ADIT_Text {
+    font-size: 36px;
+  }
+
+  /*-------------------------------------------Team Page-------------------------------------------*/
+  .contentBox .row .info .name {
+    font-size: 20px;
+  }
+
+  .contentBox .row .info .position {
+    font-size: 13px;
+  }
+
+  /*-------------------------------------------Event Page-------------------------------------------*/
+  .eventPage .swiper-container .swiper-slide .event {
+    width: calc(0.5 * 90vw);
+  }
+
+  .eventPage .event .eventDetails {
+    top: 70%;
+  }
+
+  .eventDetails .society {
+    font-size: 16px;
+    top: -22px;
+  }
+
+  .eventDetails .dateTime {
+    font-size: 18px;
+  }
+
+  .eventDetails .fullDetails h1 {
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  .eventDetails .fullDetails p {
+    font-size: 14px;
+    padding: 3px;
+  }
+
+  .eventPage .event:hover .eventDetails {
+    transform: translateY(-60%);
+  }
+  /*-------------------------------------------Features Page-------------------------------------------*/
+  .featuresPage .containerMain .serviceBox {
+    max-width: 45%;
+  }
+
+  /*-------------------------------------------Membership Page-------------------------------------------*/
+  .membershipPage .containerMain .card:nth-child(1) {
+    width: 40%;
+    order: 2;
+  }
+
+  .membershipPage .containerMain .card:nth-child(3) {
+    width: 40%;
+    order: 3;
+  }
+
+  .membershipPage .containerMain .card:nth-child(2) {
+    width: 75%;
+    order: 1;
+  }
+
+  /*-------------------------------------------Contact Page-------------------------------------------*/
+  .contactPage .container .containerMain {
+    flex-direction: column;
+    height: 100vw;
+  }
+
+  .contactPage .containerMain .restInfo,
+  .contactPage .containerMain .mapSection {
+    width: 100%;
+    height: 50vw;
+  }
+
+  .contactPage .restInfo .icon {
+    border: 3px solid #f5f5f5;
+    height: 80px;
+    width: 80px;
+    top: 5%;
+  }
+
+  .contactPage .restInfo .icon i {
+    font-size: 40px;
+  }
+
+  .contactPage .restInfo .title {
+    font-size: 20px;
+    top: 55%;
+  }
+
+  .contactPage .restInfo p {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding-top: 40%;
+  }
+
+  .contactPage .restInfo .socialMedia .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /*-------------------------------------------Nav Menu-------------------------------------------*/
+  .navPage .navMenu ul {
+    font-size: 12px;
+    width: 70%;
+  }
+
+  .navMenu ul li a:hover {
+    font-size: 17px;
+  }
+
+  /*-------------------------------------------Landing Page-------------------------------------------*/
+  #IEEE_Text {
+    font-size: 39px;
+  }
+
+  #ADIT_Text {
+    font-size: 26px;
+  }
+
+  /*-------------------------------------------Team Page-------------------------------------------*/
+  .teamPage .container {
+    width: 95vw;
+    margin: auto;
+  }
+
+  .teamPage .memberSection .contentBox .changer {
+    height: 10px;
+    width: 10px;
+    border: 2px #3742da solid;
+  }
+
+  .contentBox .row .info .pic {
+    height: 80px;
+    width: 80px;
+  }
+
+  .contentBox .row .info .name {
+    font-size: 16px;
+  }
+
+  .contentBox .row .info .position {
+    font-size: 10px;
+  }
+
+  /*-------------------------------------------Event Page-------------------------------------------*/
+  .eventPage .swiper-container .swiper-slide .event {
+    width: 50vw;
+  }
+
+  .eventPage .event .eventDetails {
+    top: 75%;
+  }
+
+  .eventDetails .society {
+    top: -21px;
+    font-size: 14px;
+  }
+
+  .eventDetails .dateTime {
+    font-size: 14px;
+  }
+
+  .eventDetails .fullDetails h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .eventDetails .fullDetails p {
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  .eventPage .event:hover .eventDetails {
+    transform: translateY(-70%);
+  }
+
+  /*-------------------------------------------Features Page-------------------------------------------*/
+  .featuresPage {
+    overflow-x: hidden;
+  }
+
+  .featuresPage .container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .featuresPage .containerMain .serviceBox {
+    max-width: 50%;
+  }
+
+  .serviceBox .serviceDescription {
+    font-size: 16px;
+  }
+
+  /*-------------------------------------------Membership Page-------------------------------------------*/
+  .membershipPage .containerMain .card:nth-child(1),
+  .membershipPage .containerMain .card:nth-child(2),
+  .membershipPage .containerMain .card:nth-child(3) {
+    width: 80%;
+  }
+
+  /*-------------------------------------------Contact Page-------------------------------------------*/
+  .contactPage .container .containerMain {
+    height: 120vw;
+  }
+  .contactPage .containerMain .restInfo,
+  .contactPage .containerMain .mapSection {
+    height: 60vw;
+  }
+
+  .contactPage .restInfo .icon {
+    border: 2px solid #f5f5f5;
+    height: 50px;
+    width: 50px;
+  }
+
+  .contactPage .restInfo .icon i {
+    font-size: 25px;
+  }
+
+  .contactPage .restInfo .title {
+    font-size: 16px;
+    top: 47%;
+  }
+
+  .contactPage .restInfo p {
+    font-size: 12px;
+    padding-top: 43%;
+    letter-spacing: 1px;
+  }
+
+  .contactPage .restInfo .socialMedia .title {
+    font-size: 16px;
+  }
+
+  .contactPage .restInfo .socialMedia .groupIcons {
+    margin-top: 15px;
+  }
+
+  .contactPage .restInfo .socialMedia .groupIcons div {
+    padding: 10px 0;
+  }
+
+  .contactPage .restInfo .socialMedia i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /*-------------------------------------------Nav Menu-------------------------------------------*/
+  .navPage .navMenu ul {
+    font-size: 8px;
+    width: 80%;
+  }
+
+  .navMenu ul li a:hover {
+    font-size: 13px;
+  }
+
+  /*-------------------------------------------Landing Page-------------------------------------------*/
+  .landingText p {
+    padding: 20px 0 20px 0;
+  }
+
+  /*-------------------------------------------About Page-------------------------------------------*/
+  .aboutPage .container {
+    margin: 40px 0 0 0;
+  }
+
+  .aboutPage .container .card {
+    margin: 5px;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+  .aboutPage .container .card:last-child {
+    height: 355px;
+  }
+
+  .aboutPage .container .card .box .content {
+    padding: 10px;
+  }
+
+  .aboutPage .container .card .box .content h2 {
+    right: 5px;
+    font-size: 4.5rem;
+  }
+
+  .aboutPage .container .card .box .content h3 {
+    font-size: 1.35rem;
+    padding-top: 13px;
+  }
+
+  .aboutPage .container .card:last-child .box .content h3 {
+    margin-top: 0;
+  }
+
+  .aboutPage .container .card .box .content p {
+    font-size: 14px;
+  }
+
+  /*-------------------------------------------Team Page-------------------------------------------*/
+  .teamPage .iconSection .iconBox:first-child {
+    width: 100%;
+  }
+
+  .teamPage .iconSection .iconBox {
+    width: 50%;
+    margin: 20px 0px;
+  }
+
+  .contentBox .row .info .pic {
+    height: 60px;
+    width: 60px;
+  }
+
+  .contentBox .row .info .name {
+    font-size: 14px;
+  }
+
+  .contentBox .row .info .position {
+    font-size: 9px;
+  }
+
+  /*-------------------------------------------Event Page-------------------------------------------*/
+  .eventPage .swiper-container .swiper-slide .event {
+    width: 70vw;
+  }
+
+  /*-------------------------------------------Features Page-------------------------------------------*/
+  .featuresPage .containerMain .serviceBox {
+    max-width: 100%;
+  }
+
+  .serviceBox .serviceDescription {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  /*-------------------------------------------Membership Page-------------------------------------------*/
+  .membershipPage .containerMain .card .content h2 {
+    font-size: 20px;
+  }
+
+  .membershipPage .containerMain .card .content ul {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+
+  .membershipPage .containerMain .card .content .knowMore {
+    padding: 8px 16px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  /*-------------------------------------------Achievments Page-------------------------------------------*/
+  .achievmentsPage .containerMain .yearCard {
+    width: 250px;
+    height: 250px;
+    cursor: grab;
+  }
+
+  .achievmentsPage .containerMain .yearCard .swiper-slide p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  /*-------------------------------------------Contact Page-------------------------------------------*/
+  .contactPage .container .containerMain {
+    min-height: 100vw;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .contactPage .containerMain .restInfo {
+    height: 100vw;
+  }
+
+  .contactPage .restInfo .address,
+  .contactPage .restInfo .mail,
+  .contactPage .restInfo .phone,
+  .contactPage .restInfo .socialMedia {
+    width: 100%;
+    height: 25%;
+  }
+
+  .contactPage .restInfo .icon {
+    border: 3px solid #f5f5f5;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+
+  .contactPage .restInfo .icon i {
+    font-size: 25px;
+  }
+
+  .contactPage .restInfo .title {
+    font-size: 14px;
+    top: 22%;
+    left: 67%;
+  }
+
+  .contactPage .restInfo p {
+    font-size: 10px;
+    padding-top: 15%;
+    padding-left: 30%;
+    letter-spacing: 1px;
+  }
+
+  .contactPage .restInfo .socialMedia .title {
+    font-size: 14px;
+    left: 50%;
+  }
+
+  .contactPage .restInfo .socialMedia .groupIcons div {
+    width: 25%;
+  }
+
+  .contactPage .containerMain .mapSection {
+    margin-bottom: 60px;
+  }
+}
